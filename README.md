@@ -1,26 +1,23 @@
-This is the code of the project :
+The project is live here:
 http://1-dot-rashid-1048.appspot.com/
 
-You can not run it, because it need special configuration in Google App Engine.
-But you can easily see the outcome in the provided link.
-
-I used: 1) J2EE 
+I used: 1) J2EE                                                                                                                           
 	2) CSS 
 	3) Bootstrap 
 	4) jQuery 
 	5) Google cloud SQL
 	6) And Google App Engine features like Cron jobs
 
-The Servlet code is here : hasan\src\hasan\com\rashid
-Another code is here: hasan\war
+All Servlet code(Controller and Model) is in "java class" folder
+All view code is here: JSP files
 
 Feature:
-1) Youtube link, Facebook comment integration
-2) Modified Google map
-3) User e-mail
+1) Dual language automatic load based on user location. Language mode change option is also avaiable
+2) Youtube link, Facebook comment integration
+3) Modified Google map
 4) jQuery gallery
-5) Registration, login
+5) Registration with email verification, login
 6) Username/password forget/restore link
 7) Balance check, deposit, withdraw, transfer like a bank account
-8)Daily transaction mail
+8) Daily transaction mail
 9) sign out/ unregister
