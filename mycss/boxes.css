@@ -1,0 +1,19 @@
+#register_box
+	{
+		border-radius: 25px;
+		width: 60%;
+  		padding: 50px;
+	    border: 4px solid #33bbff;
+	    margin: 25px;
+	}
+	
+#map { 
+		height: 50%;
+	 }
+   
+	
+#mid_box
+	{
+		padding: 0px 0px 10px 50px
+		
+	}
