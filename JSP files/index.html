@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>ABC</title>
+	</head>
+	
+	<body>
+    	<div class="result">
+    </div>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--Using freegeoip.net API-->
+    <script type="text/javascript">
+        $.getJSON('http://freegeoip.net/json/', function (location) {
+            
+            window.location = 'home?lang=' + location.country_code; // call Home class with country code
+            
+        });    
+    </script>
+    
+    <!-- if freegeoip service not available-->
+   
+    <!--Using hostip.info API-->
+    <script type="text/javascript">
+        $.get("http://api.hostip.info/country.php", function (data) {
+        	if(data!=="XX"){
+        		 window.location = 'home?lang=' + data;}  // call Home class with country code
+        	
+        });
+    </script>
+    
+      <!-- if freegeoip and hostip both service not available-->
+    
+    <script type="text/javascript">setTimeout(func,10000);  // wait sometime before calling default english mode
+    function func() {
+    	window.location = 'home?lang=' + "eng"; // call Home class with English language
+    }
+    </script>
+</body>
+</html>
